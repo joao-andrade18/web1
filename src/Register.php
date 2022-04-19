@@ -47,13 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style-cadastro.css">
+    <link rel="stylesheet" href="./src/components/Register/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
 </head>
 <body>
-    <form action="index-cadastro.php" method="post">
+    <form action="Register.php" method="post">
         <div class="container">
             <h1>Cadastro</h1>
             <div id="msgError"></div>
@@ -76,10 +76,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <input type="submit" onclick="cadastrar()" value="Cadastrar" id="btn">
 
-                <a href="index-login.php">Voltar</a>
+                <a href="./src/index.php">Voltar</a>
         </div>
     </form>
    
 </body>
-<script src="script-cadastro.js"></script>
+<script src="src\components\Register\main.js"></script>
 </html>

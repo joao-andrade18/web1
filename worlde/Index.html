@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--Autores João e Thiago -->
+</head>
+<body>
+  
+  <h1>Wordle</h1><br>  
+<div id="scoreContainer">
+        Sues pontuação : <span id="score">0</span>
+    </div>
+    <table id="wordleTable"></table>
+    <div id="controlButtons">
+        <button onclick="checkResponse()"  id="check">Verificar</button>
+        <button onclick="backspace(false)" id="delete">Apagar</button>
+    </div>
+
+    <div id="keyboardLayout">
+        <div id="keyboardLayoutRow1" class="keyboardKeys">
+
+        </div>
+        <div id="keyboardLayoutRow2" class="keyboardKeys">
+
+        </div>
+        <div id="keyboardLayoutRow3" class="keyboardKeys">
+
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
