@@ -28,7 +28,7 @@ if (!$login && $_SERVER["REQUEST_METHOD"] == "POST") {
           $_SESSION["user_name"] = $user["name"];
           $_SESSION["user_email"] = $user["email"];
 
-          header("Location: " . dirname($_SERVER['SCRIPT_NAME']) . "./src/Home.php");
+          header("Location: " . dirname($_SERVER['SCRIPT_NAME']) . "./src/worlde.php");
           exit();
         }
         else {

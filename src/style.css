@@ -305,3 +305,22 @@ p#key-m:hover {
   }
   
 }
+
+
+button#btnn{
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  margin-top: 10px;
+}
+
+
+button#btnn:hover {
+  background: #7C7C8A;
+  color: #191622;
+  transition: 500ms;
+}
