@@ -29,6 +29,7 @@
     </div>
     <table id="wordleTable"></table>
     <button id="btnn" onclick="window.location.href='../index.php';">Retornar</button>
+    <button id="btnn" onclick="window.location.href='./dashboard.php';">Dashboard</button>
     <div id="controlButtons">
         <button onclick="checkResponse()"  id="check">Verificar</button>
         <button onclick="backspace(false)" id="delete">Apagar</button>
