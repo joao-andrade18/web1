@@ -66,10 +66,18 @@ if (!$login && $_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="container">
-       <h1>Login</h1>
+    <h1>Login</h1>
+    <?php if ($login): ?>
+    <h3>Você já está logado!</h3>
+    <?php exit(); ?>
+    <?php endif; ?>
+
+    <?php if ($error): ?>
+    <h3 style="color:red;"><?php echo $error_msg; ?></h3>
+    <?php endif; ?>
        <form action="index.php" method="post">
            <label for="email" id="labell">Email</label>
-           <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+           <input type="text" name="email" id="email" placeholder="Digite seu e-mail" value="<?php echo $email; ?>">
            <label for="password " id="labelll">Senha</label>
            <i class="fa fa-eye" aria-hidden="true"></i>
            <input type="password" name="password" id="password" placeholder="Digite sua senha">
